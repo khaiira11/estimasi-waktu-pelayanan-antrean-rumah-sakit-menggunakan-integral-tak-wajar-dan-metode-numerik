@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimasi Waktu Tunggu Antrean</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Antrean Rumah Sakit</h1>
+
+        <button onclick="tambahPasien()">Tambah Pasien</button>
+        <button onclick="batalPasien()">Batal Pasien</button>
+        <button onclick="hapusAntrean()">Hapus Antrean</button>
+
+        <h2>Hasil Simulasi</h2>
+        <p>Jumlah pasien dalam antrean: <span id="pasienAntrean">0</span></p>
+        <p>Pasien selesai: <span id="pasienSelesai">0</span></p>
+        <p>Waktu pelayanan rata-rata: <span id="waktuPelayanan">0</span> menit</p>
+        <p>Estimasi waktu hingga antrean selesai: <span id="estimasiSelesai">0</span> menit</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
