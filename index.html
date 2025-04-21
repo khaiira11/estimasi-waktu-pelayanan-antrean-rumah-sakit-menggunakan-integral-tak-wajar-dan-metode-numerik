@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimasi Waktu Tunggu Antrean</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="info-icon" onclick="toggleDisclaimer()">i</div>
+    <div class="disclaimer" id="disclaimer">
+        <p>Disclaimer: Program ini mensimulasikan antrean dengan asumsi satu dokter yang melayani pasien secara berurutan.</p>
+    </div>
+
+    <div class="container">
+        <h1>Antrean Rumah Sakit</h1>
+
+        <button onclick="tambahPasien()">Tambah Pasien</button>
+        <button onclick="batalPasien()">Batal Pasien</button>
+        <button onclick="hapusAntrean()">Antrean Selesai</button>
+
+        <h2>Hasil Simulasi</h2>
+        <p>Jumlah pasien dalam antrean: <span id="pasienAntrean">0</span></p>
+        <p>Pasien selesai: <span id="pasienSelesai">0</span></p>
+        <p>Waktu pelayanan rata-rata: <span id="waktuPelayanan">0</span> menit</p>
+        <p>Estimasi waktu hingga antrean selesai: <span id="estimasiSelesai">0</span> menit</p>
+
+        <h2>Riwayat Pasien</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Waktu Masuk</th>
+                    <th>Waktu Selesai</th>
+                </tr>
+            </thead>
+            <tbody id="riwayatPasien"></tbody>
+        </table>
+    </div>
+
+    <div class="clock" id="clock"></div>
+    <script src="script.js"></script>
+</body>
+</html>
